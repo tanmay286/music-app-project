@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="browse">
+        <div class="tittle-head two">
+            <h3 class="tittle">Marathi Album <span class="new">New</span></h3>
+            <a href="browse.html">
+                <h4 class="tittle third">See all</h4>
+            </a>
+            <div class="clearfix"> </div>
+        </div>
+
+        <div class="container" >
+            <div class="col-md-10 browse-grid" *ngFor="let marathi of marathialbum">
+                <a href="single.html"><img src="{{ marathi.image }}" class="img-responsive" style="width:200px; height:200px"></a>
+                <a href="single.html"><i class="glyphicon glyphicon-play-circle" ></i></a>
+                <a class="sing" href="single.html">{{ marathi.marathialbum }}</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
